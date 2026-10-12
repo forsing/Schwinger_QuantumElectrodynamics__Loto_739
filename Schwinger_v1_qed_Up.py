@@ -8,9 +8,9 @@ from pathlib import Path
 import numpy as np
 
 DEFAULTS = (
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv",
-    "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv",
+    "/data/loto7_4698_k80.csv",
+    "/data/loto7_4698_k80_loto_2971.csv",
+    "/data/loto7_4698_k80_loto_plus_1727.csv",
 )
 
 N, K, WINDOW, LANDMARKS, STARTS = 39, 7, 96, 12, 12
@@ -527,7 +527,7 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -540,14 +540,14 @@ Test: redovi 4635..4698
 SCHWINGER QED PRELAZI: prosek=1.3906; pogodaka 0..7=[9, 30, 17, 7, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 1,24,25,30,32,33,34
+SLEDECI RED 4699: 1,x,25,y,32,z,34
 Skor=1.4756612636; iteracija=9; vec postoji u istoriji=False
 Promena polja kada se ukloni kontekst=7.81337705
 Proveren lokalni maksimum svih 224 zamena; globalni maksimum nije potvrden.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -560,14 +560,14 @@ Test: redovi 2908..2971
 SCHWINGER QED PRELAZI: prosek=1.4219; pogodaka 0..7=[11, 24, 20, 9, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 1,6,18,26,27,37,39
+SLEDECI RED 2972: 1,x,18,y,27,z,39
 Skor=3.9254044752; iteracija=7; vec postoji u istoriji=False
 Promena polja kada se ukloni kontekst=29.40102544
 Proveren lokalni maksimum svih 224 zamena; globalni maksimum nije potvrden.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: 16/48
 Validacija: 32/48
 Validacija: 48/48
@@ -580,7 +580,7 @@ Test: redovi 1664..1727
 SCHWINGER QED PRELAZI: prosek=1.2031; pogodaka 0..7=[17, 23, 18, 6, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 6,7,14,25,26,36,37
+SLEDECI RED 1728: 6,x,14,y,26,z,37
 Skor=1.3838099549; iteracija=9; vec postoji u istoriji=False
 Promena polja kada se ukloni kontekst=8.97938646
 Proveren lokalni maksimum svih 224 zamena; globalni maksimum nije potvrden.
@@ -592,9 +592,9 @@ Proveren lokalni maksimum svih 224 zamena; globalni maksimum nije potvrden.
 Popravljeno. QED sada rangira cele prelaze između kombinacija, a pretraga nastavlja zamene brojeva do lokalnog maksimuma. Nijedan završni predlog već ne postoji u svom CSV-u; istorijske kombinacije nisu zabranjene niti su rezultati namerno razdvojeni.
 
 Fajl	                Sledeća kombinacija	Prosek pogodaka na 64 kola	Prethodna kombinacija
-Objedinjeni, red 4699	1,24,25,30,32,33,34	1,3906	                    1,2188
-Loto, red 2972	        1,6,18,26,27,37,39	1,4219	                    1,2969
-Loto Plus, red 1728	    6,7,14,25,26,36,37	1,2031	                    1,2969
+Objedinjeni, red 4699	1,x,25,y,32,z,34	1,3906	                    1,2188
+Loto, red 2972	        1,x,18,y,27,z,39	1,4219	                    1,2969
+Loto Plus, red 1728	    6,x,14,y,26,z,37	1,2031	                    1,2969
 
 Provereni su integral, hronologija, ponovljivost i svih 224 zamena završnih predloga. Globalni maksimum nije potvrđen.
 """
