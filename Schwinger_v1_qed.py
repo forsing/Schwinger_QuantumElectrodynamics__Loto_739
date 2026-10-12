@@ -10,9 +10,9 @@ import numpy as np
 
 
 
-DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv"
-# DEFAULT = "/Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv"
+DEFAULT = "/data/loto7_4698_k80.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_2971.csv"
+# DEFAULT = "/data/loto7_4698_k80_loto_plus_1727.csv"
 
 
 
@@ -371,40 +371,40 @@ if __name__ == "__main__":
 
 
 """
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80.csv; redova=4698
+Ulaz: /data/loto7_4698_k80.csv; redova=4698
 Validacija: redovi 4587..4634; mass=2; regularizacija=0.1; prosek=1.2292
 Test: redovi 4635..4698
 SCHWINGER 1 QUANTUM ELECTRODYNAMICS: prosek=1.2969; pogodaka 0..7=[13, 27, 17, 6, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2188; pogodaka 0..7=[13, 30, 16, 4, 1, 0, 0, 0]
 Pozadina bez Greenovog operatora: prosek=1.4375; pogodaka 0..7=[11, 24, 21, 6, 2, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 4699: 5,8,12,17,22,29,34
+SLEDECI RED 4699: 5,x,12,y,22,z,34
 Trosak projekcije=4.2199715194; globalni minimum projekcije potvrden.
 Proper-time kernel opisuje strukturnu slicnost; trosak nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_2971.csv; redova=2971
+Ulaz: /data/loto7_4698_k80_loto_2971.csv; redova=2971
 Validacija: redovi 2860..2907; mass=2; regularizacija=10; prosek=1.4167
 Test: redovi 2908..2971
 SCHWINGER 1 QUANTUM ELECTRODYNAMICS: prosek=1.4062; pogodaka 0..7=[8, 28, 23, 4, 1, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[11, 30, 16, 7, 0, 0, 0, 0]
 Pozadina bez Greenovog operatora: prosek=1.2812; pogodaka 0..7=[12, 29, 17, 5, 1, 0, 0, 0]
 Poslednji red: 18,20,21,24,29,34,38
-SLEDECI RED 2972: 5,10,14,19,24,30,35
+SLEDECI RED 2972: 5,x,14,y,24,z,35
 Trosak projekcije=3.1692716052; globalni minimum projekcije potvrden.
 Proper-time kernel opisuje strukturnu slicnost; trosak nije verovatnoca.
 
 
 
-Ulaz: /Users/4c/Desktop/GHQ/data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
+Ulaz: /data/loto7_4698_k80_loto_plus_1727.csv; redova=1727
 Validacija: redovi 1616..1663; mass=0.5; regularizacija=1; prosek=1.4167
 Test: redovi 1664..1727
 SCHWINGER 1 QUANTUM ELECTRODYNAMICS: prosek=1.0938; pogodaka 0..7=[16, 28, 18, 2, 0, 0, 0, 0]
 Prethodna kombinacija: prosek=1.2969; pogodaka 0..7=[15, 23, 18, 8, 0, 0, 0, 0]
 Pozadina bez Greenovog operatora: prosek=1.1719; pogodaka 0..7=[13, 30, 18, 3, 0, 0, 0, 0]
 Poslednji red: 4,12,18,28,35,36,37
-SLEDECI RED 1728: 4,9,14,18,24,29,35
+SLEDECI RED 1728: 4,x,14,y,24,z,35
 Trosak projekcije=3.1804132954; globalni minimum projekcije potvrden.
 Proper-time kernel opisuje strukturnu slicnost; trosak nije verovatnoca.
 """
@@ -412,14 +412,12 @@ Proper-time kernel opisuje strukturnu slicnost; trosak nije verovatnoca.
 
 
 """
-idemo na novu oblast Julian Seymour Schwinger  1-quantum electrodynamics.   2-nuclear physics.     3-particle physics.     4-atomic physics       5-quantum field theory.        6-Schwinger effect.
-
-Pripremiću šest zasebnih Schwingerovih modela, po jedan za svaku oblast. Za svaki ću izdvojiti konkretnu ideju, napisati samostalan kod i proveriti ga na istom fajlu, uz postojeća pravila: deterministički rad, hronološki test i jedna konačna verzija.
-
-SCHWINGER 1 — QUANTUM ELECTRODYNAMICS je završena i proverena.
+SCHWINGER 1 — QUANTUM ELECTRODYNAMICS.
 Primenjena je ideja proper-time metode i Greenovog operatora na strukturnu sličnost celih kombinacija. Schwingerov rad iz 1951.
+
 Predlog za red 4699:
-5, 8, 12, 17, 22, 29, 34
+5, x, 12, y, 22, z, 34
+
 Na poslednja 64 kola:
 Metod	Prosečan broj pogodaka
 Schwinger 1	1,2969
